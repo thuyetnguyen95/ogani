@@ -4,8 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sample</title>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body>
-  
+<body style="padding: 200px;">
+  <div id="slider-range"></div>
+  <hr>
+  <p>Giá thấp: <span id="low-price">0</span></p>
+  <p>Giá cao: <span id="high-price">0</span></p>
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+
+<!-- JS Additional -->
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/page-product.js"></script>
+<script src="js/main.js"></script>
+<script>
+  $('#slider-range').slider({
+    range: true,
+    min: 0,
+    max: 200000,
+    step: 1000,
+    values: [0, 200000],
+    slide: function(event, ui) {
+      console.log(ui);
+      $('#low-price').text(ui.values[0]);
+      $('#high-price').text(ui.values[1]);
+    }
+  });
+
+</script>
 </body>
 </html>

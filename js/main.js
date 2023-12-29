@@ -1,12 +1,3 @@
-/*  ---------------------------------------------------
-    Template Name: Ogani
-    Description:  Ogani eCommerce  HTML Template
-    Author: Colorlib
-    Author URI: https://colorlib.com
-    Version: 1.0
-    Created: Colorlib
----------------------------------------------------------  */
-
 'use strict';
 
 (function ($) {
@@ -103,29 +94,13 @@
     -------------------------------*/
     $(".product__discount__slider").owlCarousel({
         loop: true,
-        margin: 0,
-        items: 3,
-        dots: true,
-        smartSpeed: 1200,
-        autoHeight: false,
         autoplay: true,
+        autoHeight: false,
+        items: 3,
         responsive: {
-
-            320: {
-                items: 1,
-            },
-
-            480: {
-                items: 2,
-            },
-
-            768: {
-                items: 2,
-            },
-
-            992: {
-                items: 3,
-            }
+            1000: { items: 3 },
+            756: { items: 2 },
+            0: { items: 1}
         }
     });
 
@@ -142,27 +117,6 @@
         autoplay: true
     });
 
-    /*-----------------------
-		Price Range Slider
-	------------------------ */
-    var rangeSlider = $(".price-range"),
-        minamount = $("#minamount"),
-        maxamount = $("#maxamount"),
-        minPrice = rangeSlider.data('min'),
-        maxPrice = rangeSlider.data('max');
-    rangeSlider.slider({
-        range: true,
-        min: minPrice,
-        max: maxPrice,
-        values: [minPrice, maxPrice],
-        slide: function (event, ui) {
-            minamount.val('$' + ui.values[0]);
-            maxamount.val('$' + ui.values[1]);
-        }
-    });
-    minamount.val('$' + rangeSlider.slider("values", 0));
-    maxamount.val('$' + rangeSlider.slider("values", 1));
-
     /*--------------------------
         Select
     ----------------------------*/
@@ -172,8 +126,6 @@
 		Single Product
 	--------------------*/
     $('.product__details__pic__slider img').on('click', function (event) {
-        console.log(event);
-
         var imgurl = $(this).data('imgbigurl');
         var bigImg = $('.product__details__pic__item--large').attr('src');
         if (imgurl != bigImg) {
@@ -183,43 +135,7 @@
         }
     });
 
-    /*-------------------
-		Quantity change
-	--------------------- */
-    var proQty = $('.pro-qty');
-    proQty.prepend('<span class="dec qtybtn">-</span>');
-    proQty.append('<span class="inc qtybtn">+</span>');
-    proQty.on('click', '.qtybtn', function () {
-        var $button = $(this);
-        var oldValue = $button.parent().find('input').val();
-        if ($button.hasClass('inc')) {
-            var newVal = parseFloat(oldValue) + 1;
-        } else {
-            // Don't allow decrementing below zero
-            if (oldValue > 0) {
-                var newVal = parseFloat(oldValue) - 1;
-            } else {
-                newVal = 0;
-            }
-        }
-        $button.parent().find('input').val(newVal);
-    });
-
-
     // Ẩn hiện menu sidebar
-    // let heroCategoryAll = document.querySelector('.hero__categories__all')
-    
-
-    // heroCategoryAll.addEventListener('click', function() {
-    //     let categories = document.querySelector('.hero__categories ul');
-        
-    //     if (categories.style.display === 'none') {
-    //         categories.style.display = 'block';
-    //     } else {
-    //         categories.style.display = 'none';
-    //     }
-    // })
-
     $('.hero__categories__all').click(function() {
         $('.hero__categories ul').slideToggle();
     })
@@ -227,36 +143,10 @@
     // Ẩn hiện sản phẩm theo loại
     $('.featured__controls li').click(function(event) {
         $('.featured__controls li').removeClass('active');
-        // event.target.classList.add('active');
         $(event.target).addClass('active');
-
-        // console.log(event.target.dataset.filter);
-        // console.log($(event.target).data('filter'));
-
-        // $($(event.target).data('filter'))
 
         $('.featured__filter').children().hide();
         $('.featured__filter').children($(event.target).data('filter')).show();
-
-        // let featuredFilter = document.querySelector('.featured__filter')
-
-        // for (let index = 0; index < featuredFilter.children.length; index++) {
-        //     featuredFilter.children[index].style.display = 'none';
-        // }
-
-        // if (event.target.dataset.filter !== '*') {
-        //     let activeItems = document.querySelectorAll(event.target.dataset.filter);
-        //     for (let index = 0; index < activeItems.length; index++) {
-        //         activeItems[index].style.display = 'block';
-        //     }
-        // } else {
-        //     for (let index = 0; index < featuredFilter.children.length; index++) {
-        //         featuredFilter.children[index].style.display = 'block';
-        //     }
-        // }
-        
-
-
     });
 
 })(jQuery);

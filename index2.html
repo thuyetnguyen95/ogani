@@ -4,29 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <style>
+    .owl-carousel .owl-item {
+      background-color: red;
+      height: 100px;
+    }
+
+    .owl-nav {
+      margin-top: 50px;
+    }
+
+    .owl-nav button {
+     margin-right: 12px;
+    }
+    .owl-nav button span {
+      font-size: 32px;
+      padding: 12px !important;
+      border: 1px solid;
+    }
+
+    .owl-dot {
+      width: 10px;
+      height: 10px;
+      background-color: red !important;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .owl-dot.active {
+      background-color: green!important;
+    }
+  </style>
 </head>
 <body>
-  <select name="" id="customSelect">
-    <option value="">Sample option 1</option>
-    <option value="">Sample option 2</option>
-    <option value="">Sample option 3</option>
-    <option value="">Sample option 4</option>
-    <option value="">Sample option 5</option>
-  </select>
-
-  <select name="" >
-    <option value="">option option 1</option>
-    <option value="">option option 2</option>
-    <option value="">option option 3</option>
-    <option value="">option option 4</option>
-    <option value="">option option 5</option>
-  </select>
+  <div class="owl-carousel">
+    <div>
+      <p>Your Content 1</p>
+      <p>Your Content 11</p>
+      <p>Your Content 11111</p>
+    </div>
+    <div> Your Content 2</div>
+    <div> Your Content 3</div>
+    <div> Your Content 4</div>
+    <div> Your Content 5</div>
+    <div> Your Content 6</div>
+    <div> Your Content 7</div>
+  </div>
+ 
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery.nice-select.min.js"></script>
-
+  <script src="js/owl.carousel.min.js"></script>
   <script>
-    $('select').niceSelect()
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        margin: 15,
+        nav: true,
+        loop: true,
+        autoplay: true,
+        items: 4,
+        dots: false,
+        responsive: {
+          1200: {
+            items: 4
+          },
+          900: {
+            items: 3
+          },
+          756: {
+            items: 2
+          },
+          400: {
+            items: 1
+          }
+        }
+      });
+    });
   </script>
 </body>
 </html>

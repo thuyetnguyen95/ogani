@@ -20,8 +20,6 @@
 - Lọc theo màu sắc
 - Lọc theo kích thước
 - Sắp xếp (theo giá cao thấp)
-- Hiển thị số lượng sản phẩm đã tìm kiếm/filter (optional)
-- Hiển thị theo dạng lưới hoặc danh sách (optional)
 - Phân trang
 - Cho phép thêm sản phẩm vào giỏ hàng, wishlist
 
