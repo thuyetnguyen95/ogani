@@ -3637,3 +3637,50 @@ ol {
 		font-size: 24px;
 	}
 }
+
+/* ===================================================== */
+.search-result {
+	position: absolute;
+	z-index: 2;
+	top: 52px;
+	display: none;
+	padding: 24px;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 2px 1px 6px #a3a3a3;
+}
+
+.hero__search__form:hover .search-result{
+	display: block;
+}
+
+.search-products {
+	max-height: 350px;
+	overflow-y: auto;
+}
+
+.search-product-item {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.search-product-item:last-child {
+	margin: unset;
+	border: unset;
+}
+
+.search-product-item img {
+	width: 75px;	
+	height: 75px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-right: 24px;
+}
+
+.search-product-item-info p:first-child {
+	font-weight: 600;
+	margin: 0;
+}

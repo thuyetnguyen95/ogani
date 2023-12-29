@@ -1,4 +1,39 @@
+// Hiển thị sẵn giỏ hàng
+let cartDefault = localStorage.getItem('cart');
+renderCart(JSON.parse(cartDefault));
 
+// THêm sản phẩm vào giỏ hàng
+function addToCart(productId, qty = 1) {
+  let addedProduct = PRODUCTS.filter(function(product) {
+    return productId === product.id;
+  })
+  addedProduct = addedProduct[0];
+
+  let cart = localStorage.getItem('cart');
+  cart = JSON.parse(cart);
+
+  if (!cart) {
+    cart = [];
+    addedProduct.qty = qty;
+    cart.push(addedProduct)
+    localStorage.setItem('cart', JSON.stringify(cart));
+  } else {
+    let oldProductIndex = cart.findIndex(function(product) {
+      return product.id == addedProduct.id;
+    })
+
+    if (oldProductIndex == -1) {
+      addedProduct.qty = qty;
+      cart.push(addedProduct);
+      localStorage.setItem('cart', JSON.stringify(cart))
+    } else {
+      cart[oldProductIndex].qty += qty;
+      localStorage.setItem('cart', JSON.stringify(cart))
+    }
+  }
+
+  renderCart(cart);
+}
 
 // Hiển thị danh sách sản phẩm ra giỏ hàng.
 function renderCart(products) {
@@ -42,6 +77,8 @@ function removeCartProduct(id) {
   let result = products.filter(function (product) {
     return product.id !== id;
   })
+
+  localStorage.setItem('cart', JSON.stringify(result));
 
   renderCart(result);
 }

@@ -155,9 +155,26 @@
                     <div class="header__cart">
                         <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            <li class="cart-anchor">
+                                <a href="#">
+                                    <i class="fa fa-shopping-bag"></i> <span class="cart-amount">0</span>
+                                </a>
+                                <div class="cart-modal">
+                                    <p><i class="fa fa-shopping-cart"></i> Giỏ hàng (<span class="cart-amount">0</span>)</p>
+                                    <hr>
+                                    <div id="buy-list"></div>
+                                    <hr>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <p class="font-weight-bold m-0">Tổng cộng:</p>
+                                            <p class="text-danger font-weight-bold m-0 total-price"></p>
+                                        </div>
+                                        <a href="/shoping-cart.html" class="btn btn-danger btn-sm">Xem giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                        <div class="header__cart__price">item: <span class="total-price">0</span></div>
                     </div>
                 </div>
             </div>
@@ -449,7 +466,10 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 
-
+     <!-- Additional -->
+     <script src="js/data.js"></script>
+     <script src="js/cart.js"></script>
+     <script src="js/main.js"></script>
 </body>
 
 </html>

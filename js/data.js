@@ -1,4 +1,4 @@
-let PRODUCTS = [
+const PRODUCTS = [
   {
     "id": 1,
     "name": "Thịt bò xẻ miếng",
@@ -6,7 +6,19 @@ let PRODUCTS = [
     "image": "img/product/product-1.jpg",
     "discount": 0,
     "color": "white",
-    "size": "small"
+    "size": "small",
+    "stock": 100,
+    "weight": 1,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "1Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 2,
@@ -15,7 +27,19 @@ let PRODUCTS = [
     "image": "img/product/product-2.jpg",
     "discount": 0,
     "color": "white",
-    "size": "small"
+    "size": "small",
+    "stock": 100,
+    "weight": 1,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 3,
@@ -24,7 +48,19 @@ let PRODUCTS = [
     "image": "img/product/product-3.jpg",
     "discount": 0,
     "color": "blue",
-    "size": "small"
+    "size": "small",
+    "stock": 100,
+    "weight": 1,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 4,
@@ -33,7 +69,19 @@ let PRODUCTS = [
     "image": "img/product/product-4.jpg",
     "discount": 0,
     "color": "black",
-    "size": "tiny"
+    "size": "tiny",
+    "stock": 100,
+    "weight": 13,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 5,
@@ -42,7 +90,19 @@ let PRODUCTS = [
     "image": "img/product/product-5.jpg",
     "discount": 0,
     "color": "green",
-    "size": "tiny"
+    "size": "tiny",
+    "stock": 100,
+    "weight": 4,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 6,
@@ -51,7 +111,19 @@ let PRODUCTS = [
     "image": "img/product/product-6.jpg",
     "discount": 0,
     "color": "green",
-    "size": "small"
+    "size": "small",
+    "stock": 100,
+    "weight": 1,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 7,
@@ -60,7 +132,19 @@ let PRODUCTS = [
     "image": "img/product/product-7.jpg",
     "discount": 0,
     "color": "white",
-    "size": "tiny"
+    "size": "tiny",
+    "stock": 100,
+    "weight": 5,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 8,
@@ -69,7 +153,19 @@ let PRODUCTS = [
     "image": "img/product/product-8.jpg",
     "discount": 0,
     "color": "yellow",
-    "size": "tiny"
+    "size": "tiny",
+    "stock": 100,
+    "weight": 4,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 9,
@@ -78,7 +174,19 @@ let PRODUCTS = [
     "image": "img/product/product-9.jpg",
     "discount": 0,
     "color": "red",
-    "size": "large"
+    "size": "large",
+    "stock": 100,
+    "weight": 4,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 10,
@@ -87,7 +195,19 @@ let PRODUCTS = [
     "image": "img/product/product-10.jpg",
     "discount": 0,
     "color": "red",
-    "size": "medium"
+    "size": "medium",
+    "stock": 100,
+    "weight": 1,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 11,
@@ -96,7 +216,19 @@ let PRODUCTS = [
     "image": "img/product/product-11.jpg",
     "discount": 0,
     "color": "red",
-    "size": "tiny"
+    "size": "tiny",
+    "stock": 100,
+    "weight": 5,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 12,
@@ -105,7 +237,19 @@ let PRODUCTS = [
     "image": "img/product/product-12.jpg",
     "discount": 0,
     "color": "red",
-    "size": "small"
+    "size": "small",
+    "stock": 100,
+    "weight": 7,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 13,
@@ -114,7 +258,19 @@ let PRODUCTS = [
     "image": "img/product/product-1.jpg",
     "discount": 0,
     "color": "green",
-    "size": "small"
+    "size": "small",
+    "stock": 100,
+    "weight": 4,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 14,
@@ -123,7 +279,19 @@ let PRODUCTS = [
     "image": "img/product/product-2.jpg",
     "discount": 0,
     "color": "black",
-    "size": "medium"
+    "size": "medium",
+    "stock": 100,
+    "weight": 10,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 15,
@@ -132,7 +300,19 @@ let PRODUCTS = [
     "image": "img/product/product-3.jpg",
     "discount": 0,
     "color": "green",
-    "size": "large"
+    "size": "large",
+    "stock": 100,
+    "weight": 1,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 16,
@@ -141,7 +321,19 @@ let PRODUCTS = [
     "image": "img/product/product-4.jpg",
     "discount": 0,
     "color": "black",
-    "size": "large"
+    "size": "large",
+    "stock": 100,
+    "weight": 17,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 17,
@@ -150,7 +342,19 @@ let PRODUCTS = [
     "image": "img/product/product-5.jpg",
     "discount": 0,
     "color": "green",
-    "size": "medium"
+    "size": "medium",
+    "stock": 100,
+    "weight": 9,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 18,
@@ -159,7 +363,19 @@ let PRODUCTS = [
     "image": "img/product/product-6.jpg",
     "discount": 0,
     "color": "blue",
-    "size": "tiny"
+    "size": "tiny",
+    "stock": 100,
+    "weight": 7,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 19,
@@ -168,7 +384,19 @@ let PRODUCTS = [
     "image": "img/product/product-7.jpg",
     "discount": 0,
     "color": "green",
-    "size": "medium"
+    "size": "medium",
+    "stock": 100,
+    "weight": 7,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 20,
@@ -177,7 +405,19 @@ let PRODUCTS = [
     "image": "img/product/product-8.jpg",
     "discount": 0,
     "color": "blue",
-    "size": "small"
+    "size": "small",
+    "stock": 100,
+    "weight": 5,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 21,
@@ -186,7 +426,19 @@ let PRODUCTS = [
     "image": "img/product/product-9.jpg",
     "discount": 0,
     "color": "blue",
-    "size": "medium"
+    "size": "medium",
+    "stock": 100,
+    "weight": 13,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 22,
@@ -195,7 +447,19 @@ let PRODUCTS = [
     "image": "img/product/product-10.jpg",
     "discount": 0,
     "color": "white",
-    "size": "small"
+    "size": "small",
+    "stock": 100,
+    "weight": 4,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 23,
@@ -204,7 +468,19 @@ let PRODUCTS = [
     "image": "img/product/product-11.jpg",
     "discount": 0,
     "color": "red",
-    "size": "medium"
+    "size": "medium",
+    "stock": 100,
+    "weight": 13,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 24,
@@ -213,7 +489,19 @@ let PRODUCTS = [
     "image": "img/product/product-12.jpg",
     "discount": 0,
     "color": "green",
-    "size": "tiny"
+    "size": "tiny",
+    "stock": 100,
+    "weight": 3,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 25,
@@ -222,7 +510,19 @@ let PRODUCTS = [
     "image": "img/product/product-12.jpg",
     "discount": 0,
     "color": "blue",
-    "size": "large"
+    "size": "large",
+    "stock": 100,
+    "weight": 17,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 26,
@@ -231,7 +531,19 @@ let PRODUCTS = [
     "image": "img/product/discount/pd-1.jpg",
     "discount": 10,
     "color": "yellow",
-    "size": "tiny"
+    "size": "tiny",
+    "stock": 100,
+    "weight": 1,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 27,
@@ -240,7 +552,19 @@ let PRODUCTS = [
     "image": "img/product/discount/pd-2.jpg",
     "discount": 10,
     "color": "black",
-    "size": "small"
+    "size": "small",
+    "stock": 100,
+    "weight": 9,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 28,
@@ -249,7 +573,19 @@ let PRODUCTS = [
     "image": "img/product/discount/pd-3.jpg",
     "discount": 20,
     "color": "yellow",
-    "size": "medium"
+    "size": "medium",
+    "stock": 100,
+    "weight": 17,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 29,
@@ -258,7 +594,19 @@ let PRODUCTS = [
     "image": "img/product/discount/pd-4.jpg",
     "discount": 20,
     "color": "red",
-    "size": "medium"
+    "size": "medium",
+    "stock": 100,
+    "weight": 1,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 30,
@@ -267,7 +615,19 @@ let PRODUCTS = [
     "image": "img/product/discount/pd-5.jpg",
     "discount": 15,
     "color": "white",
-    "size": "small"
+    "size": "small",
+    "stock": 100,
+    "weight": 17,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   },
   {
     "id": 31,
@@ -276,6 +636,18 @@ let PRODUCTS = [
     "image": "img/product/discount/pd-6.jpg",
     "discount": 100,
     "color": "yellow",
-    "size": "tiny"
+    "size": "tiny",
+    "stock": 100,
+    "weight": 3,
+    "collections": [
+      "https://picsum.photos/400",
+      "https://picsum.photos/400?a",
+      "https://picsum.photos/400?b",
+      "https://picsum.photos/400?c"
+    ],
+    "introduction": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eius quibusdam, voluptatum a similique tempore ratione id maiores corporis doloribus consequuntur, voluptates libero voluptas quasi animi explicabo assumenda cupiditate! Voluptate?",
+    "information": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.",
+    "review": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
   }
-];
+]

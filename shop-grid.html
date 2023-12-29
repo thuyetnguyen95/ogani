@@ -169,7 +169,7 @@
                                             <p class="font-weight-bold m-0">Tổng cộng:</p>
                                             <p class="text-danger font-weight-bold m-0 total-price"></p>
                                         </div>
-                                        <a href="#" class="btn btn-danger btn-sm">Xem giỏ hàng</a>
+                                        <a href="/shoping-cart.html" class="btn btn-danger btn-sm">Xem giỏ hàng</a>
                                     </div>
                                 </div>
                             </li>
@@ -230,9 +230,22 @@
                                         <option value="">Fresh Bananas</option>
                                     </select>
                                 </div>
-                                <input type="text" placeholder="What do yo u need?">
+                                <input
+                                    type="text" 
+                                    autocomplete="off"
+                                    placeholder="Nhập tên sản phẩm"
+                                    oninput="handleSearchProduct()"
+                                    id="keyword"
+                                >
                                 <button type="submit" class="site-btn">SEARCH</button>
                             </form>
+                            <div class="search-result" >
+                                <h5>Kết quả: </h5>
+                                <hr>
+                                <div class="search-products">
+                                    <p>Không có sản phẩm nào!</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="hero__search__phone">
                             <div class="hero__search__phone__icon">
@@ -376,64 +389,6 @@
                             <div class="latest-product__text">
                                 <h4>Latest Products</h4>
                                 <div class="latest-product__slider owl-carousel">
-                                    <div class="latest-prdouct__slider__item">
-                                        <a href="#" class="latest-product__item">
-                                            <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/lp-1.jpg" alt="">
-                                            </div>
-                                            <div class="latest-product__item__text">
-                                                <h6>Crab Pool Security</h6>
-                                                <span>$30.00</span>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="latest-product__item">
-                                            <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/lp-2.jpg" alt="">
-                                            </div>
-                                            <div class="latest-product__item__text">
-                                                <h6>Crab Pool Security</h6>
-                                                <span>$30.00</span>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="latest-product__item">
-                                            <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/lp-3.jpg" alt="">
-                                            </div>
-                                            <div class="latest-product__item__text">
-                                                <h6>Crab Pool Security</h6>
-                                                <span>$30.00</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="latest-prdouct__slider__item">
-                                        <a href="#" class="latest-product__item">
-                                            <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/lp-1.jpg" alt="">
-                                            </div>
-                                            <div class="latest-product__item__text">
-                                                <h6>Crab Pool Security</h6>
-                                                <span>$30.00</span>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="latest-product__item">
-                                            <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/lp-2.jpg" alt="">
-                                            </div>
-                                            <div class="latest-product__item__text">
-                                                <h6>Crab Pool Security</h6>
-                                                <span>$30.00</span>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="latest-product__item">
-                                            <div class="latest-product__item__pic">
-                                                <img src="img/latest-product/lp-3.jpg" alt="">
-                                            </div>
-                                            <div class="latest-product__item__text">
-                                                <h6>Crab Pool Security</h6>
-                                                <span>$30.00</span>
-                                            </div>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
