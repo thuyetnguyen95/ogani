@@ -64,7 +64,7 @@
                     <ul class="header__menu__dropdown">
                         <li><a href="./shop-details.html">Shop Details</a></li>
                         <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="./checkout.html">Thanh toán</a></li>
                         <li><a href="./blog-details.html">Blog Details</a></li>
                     </ul>
                 </li>
@@ -93,15 +93,15 @@
         <div class="header__top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
                             <ul>
-                                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                                <li>Free Shipping for all Order of $99</li>
+                                <li><i class="fa fa-envelope"></i> hotro@ogani.com</li>
+                                <li class="text-danger">Free Shipping cho tất cả đơn hàng trên 1 triệu</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="header__top__right">
                             <div class="header__top__right__social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -114,12 +114,12 @@
                                 <div>English</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul>
-                                    <li><a href="#">Spanis</a></li>
+                                    <li><a href="#">Vietnamese</a></li>
                                     <li><a href="#">English</a></li>
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                                <a href="#"><i class="fa fa-user"></i> Đăng nhập</a>
                             </div>
                         </div>
                     </div>
@@ -133,31 +133,48 @@
                         <a href="./index.html"><img src="img/logo.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <nav class="header__menu">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li class="active"><a href="./shop-grid.html">Shop</a></li>
+                            <li class="active"><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./shop-grid.html">Sản phẩm</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <li><a href="./shop-details.html">Chi tiết sản phẩm</a></li>
+                                    <li><a href="./shoping-cart.html">Giỏ hàng</a></li>
+                                    <li><a href="./checkout.html">Thanh toán</a></li>
+                                    <li><a href="./blog-details.html">Chi tiết bài viết</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./blog.html">Bài viết</a></li>
+                            <li><a href="./contact.html">Liên hệ</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <div class="header__cart">
                         <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            <li class="cart-anchor">
+                                <a href="#">
+                                    <i class="fa fa-shopping-bag"></i> <span class="cart-amount">0</span>
+                                </a>
+                                <div class="cart-modal">
+                                    <p><i class="fa fa-shopping-cart"></i> Giỏ hàng (<span class="cart-amount">0</span>)</p>
+                                    <hr>
+                                    <div id="buy-list"></div>
+                                    <hr>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <p class="font-weight-bold m-0">Tổng cộng:</p>
+                                            <p class="text-danger font-weight-bold m-0 total-price"></p>
+                                        </div>
+                                        <a href="#" class="btn btn-danger btn-sm">Xem giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                        <div class="header__cart__price">item: <span class="total-price">0</span></div>
                     </div>
                 </div>
             </div>
@@ -176,20 +193,20 @@
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>All departments</span>
+                            <span>Tất cả</span>
                         </div>
                         <ul>
-                            <li><a href="#">Fresh Meat</a></li>
-                            <li><a href="#">Vegetables</a></li>
-                            <li><a href="#">Fruit & Nut Gifts</a></li>
-                            <li><a href="#">Fresh Berries</a></li>
-                            <li><a href="#">Ocean Foods</a></li>
-                            <li><a href="#">Butter & Eggs</a></li>
-                            <li><a href="#">Fastfood</a></li>
-                            <li><a href="#">Fresh Onion</a></li>
-                            <li><a href="#">Papayaya & Crisps</a></li>
-                            <li><a href="#">Oatmeal</a></li>
-                            <li><a href="#">Fresh Bananas</a></li>
+                            <li><a href="#">Thịt</a></li>
+                            <li><a href="#">Rau</a></li>
+                            <li><a href="#">Nước trái cây</a></li>
+                            <li><a href="#">Cá & Tôm</a></li>
+                            <li><a href="#">Hải sản</a></li>
+                            <li><a href="#">Bơ & Trứng</a></li>
+                            <li><a href="#">Đồ ăn nhanh</a></li>
+                            <li><a href="#">Thực phẩm khô</a></li>
+                            <li><a href="#">Hoa quả sấy</a></li>
+                            <li><a href="#">Cháo & Bột</a></li>
+                            <li><a href="#">Hương liệu</a></li>
                         </ul>
                     </div>
                 </div>
@@ -199,31 +216,43 @@
                             <form action="#">
                                 <div class="hero__search__categories">
                                     <select>
-                                        <option value="1">All Categories</option>
-                                        <option value="">Fresh Meat</option>
-                                        <option value="">Vegetables</option>
-                                        <option value="">Fruit & Nut Gifts</option>
-                                        <option value="">Fresh Berries</option>
-                                        <option value="">Ocean Foods</option>
-                                        <option value="">Butter & Eggs</option>
-                                        <option value="">Fastfood</option>
-                                        <option value="">Fresh Onion</option>
-                                        <option value="">Papayaya & Crisps</option>
-                                        <option value="">Oatmeal</option>
-                                        <option value="">Fresh Bananas</option>
+                                        <option value="1">Tât cả</option>
+                                        <option value="">Thịt</option>
+                                        <option value="">Rau</option>
+                                        <option value="">Nước trái cây</option>
+                                        <option value="">Cá & Tôm</option>
+                                        <option value="">Hải sản</option>
+                                        <option value="">Bơ & Trứng</option>
+                                        <option value="">Đồ ăn nhanh</option>
+                                        <option value="">Thực phẩm khô</option>
+                                        <option value="">Hoa quả sấy</option>
+                                        <option value="">Cháo & Bột</option>
+                                        <option value="">Hương liệu</option>
                                     </select>
                                 </div>
-                                <input type="text" placeholder="What do yo u need?">
-                                <button type="submit" class="site-btn">SEARCH</button>
+                                <input
+                                    type="text"
+                                    placeholder="Bạn muốn mua gì?"
+                                    id="keyword"
+                                    oninput="handleSearchProduct()"
+                                >
+                                <button type="submit" class="site-btn">Tìm kiếm</button>
                             </form>
+                            <div class="search-result">
+                                <h5>Kết quả: <span class="search-count"></span></h5>
+                                <hr>
+                                <div class="search-products">
+                                    <p>Không có sản phẩm nào!</p>
+                                </div>
+                           </div>
                         </div>
                         <div class="hero__search__phone">
                             <div class="hero__search__phone__icon">
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+65 11.188.888</h5>
-                                <span>support 24/7 time</span>
+                                <h5>+84 6666.88.88</h5>
+                                <span>Hỗ trợ 24/7</span>
                             </div>
                         </div>
                     </div>
@@ -239,11 +268,11 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Vegetable’s Package</h2>
+                        <h2>Chi tiết sản phẩm</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Home</a>
-                            <a href="./index.html">Vegetables</a>
-                            <span>Vegetable’s Package</span>
+                            <a href="./index.html">Trang chủ</a>
+                            <a href="./index.html">Sản phẩm</a>
+                            <span>Chi tiết</span>
                         </div>
                     </div>
                 </div>
@@ -263,14 +292,6 @@
                                 src="img/product/details/product-details-1.jpg" alt="">
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
-                            <img data-imgbigurl="img/product/details/product-details-2.jpg"
-                                src="img/product/details/thumb-1.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-3.jpg"
-                                src="img/product/details/thumb-2.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-5.jpg"
-                                src="img/product/details/thumb-3.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-4.jpg"
-                                src="img/product/details/thumb-4.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -286,7 +307,7 @@
                             <span>(18 reviews)</span>
                         </div>
                         <div class="product__details__price">50.000đ</div>
-                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
+                        <p class="product__details__introduction">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
                             vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
                             quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
                         <div class="product__details__quantity">
@@ -296,12 +317,12 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="primary-btn" onclick="addToCart(1)">THÊM VÀO GIỎ HÀNG</a>
+                        <a href="#" class="primary-btn" id="add-to-cart">THÊM VÀO GIỎ HÀNG</a>
                         <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
                         <ul>
-                            <li><b>Tồn kho</b> <span>In Stock</span></li>
-                            <li><b>Vận chuyển</b> <span>01 day shipping. <samp>Free pickup today</samp></span></li>
-                            <li><b>Khối lượng</b> <span>0.5 kg</span></li>
+                            <li><b>Tồn kho</b> <span class="product-stock">In Stock</span></li>
+                            <li><b>Vận chuyển</b> <span>giao hàng trong 1 ngày.</span></li>
+                            <li><b>Khối lượng</b> <span class="product-weight">0.5 kg</span></li>
                             <li><b>Chia sẻ trên</b>
                                 <div class="share">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -333,61 +354,16 @@
                             <div class="tab-pane active" id="tabs-1" role="tabpanel">
                                 <div class="product__details__tab__desc">
                                     <h6>Mô tả sản phẩm</h6>
-                                    <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                                        Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus
-                                        suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam
-                                        vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.
-                                        Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat,
-                                        accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a
-                                        pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula
-                                        elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus
-                                        et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
-                                        vel, ullamcorper sit amet ligula. Proin eget tortor risus.</p>
-                                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem
-                                        ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet
-                                        elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
-                                        porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus
-                                        nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed
-                                        porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum
-                                        sed sit amet dui. Proin eget tortor risus.</p>
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-2" role="tabpanel">
                                 <div class="product__details__tab__desc">
                                     <h6>Thông tin dinh dưỡng</h6>
-                                    <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                                        Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus.
-                                        Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam
-                                        sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo
-                                        eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.
-                                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent
-                                        sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac
-                                        diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante
-                                        ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                                        Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                                        Proin eget tortor risus.</p>
-                                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem
-                                        ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet
-                                        elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
-                                        porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus
-                                        nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-3" role="tabpanel">
                                 <div class="product__details__tab__desc">
                                     <h6>Đánh giá</h6>
-                                    <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                                        Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus.
-                                        Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam
-                                        sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo
-                                        eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.
-                                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent
-                                        sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac
-                                        diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante
-                                        ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                                        Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                                        Proin eget tortor risus.</p>
                                 </div>
                             </div>
                         </div>
@@ -434,7 +410,7 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6><a href="#">Chuối cả nải</a></h6>
+                            <h6><a href="#">Hương liệu cả nải</a></h6>
                             <h5>$30.00</h5>
                         </div>
                     </div>
@@ -485,8 +461,8 @@
                         </div>
                         <ul>
                             <li>Địa chỉ: 13 P.Dịch Vọng, Cầu Giấy</li>
-                            <li>SĐT: +65 11.188.888</li>
-                            <li>Email: support@ogani.com</li>
+                            <li>SĐT: +84 6666.88.88</li>
+                            <li>Email: hotro@ogani.com</li>
                         </ul>
                     </div>
                 </div>
@@ -548,10 +524,10 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+
     <script src="js/data.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
-
+    <script src="js/product-detail.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>

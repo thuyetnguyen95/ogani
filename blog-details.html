@@ -64,7 +64,7 @@
                     <ul class="header__menu__dropdown">
                         <li><a href="./shop-details.html">Shop Details</a></li>
                         <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="./checkout.html">Thanh toán</a></li>
                         <li><a href="./blog-details.html">Blog Details</a></li>
                     </ul>
                 </li>
@@ -93,15 +93,15 @@
         <div class="header__top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
                             <ul>
-                                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                                <li>Free Shipping for all Order of $99</li>
+                                <li><i class="fa fa-envelope"></i> hotro@ogani.com</li>
+                                <li class="text-danger">Free Shipping cho tất cả đơn hàng trên 1 triệu</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="header__top__right">
                             <div class="header__top__right__social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -114,12 +114,12 @@
                                 <div>English</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul>
-                                    <li><a href="#">Spanis</a></li>
+                                    <li><a href="#">Vietnamese</a></li>
                                     <li><a href="#">English</a></li>
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                                <a href="#"><i class="fa fa-user"></i> Đăng nhập</a>
                             </div>
                         </div>
                     </div>
@@ -133,31 +133,48 @@
                         <a href="./index.html"><img src="img/logo.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <nav class="header__menu">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./shop-grid.html">Shop</a></li>
+                            <li class="active"><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./shop-grid.html">Sản phẩm</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <li><a href="./shop-details.html">Chi tiết sản phẩm</a></li>
+                                    <li><a href="./shoping-cart.html">Giỏ hàng</a></li>
+                                    <li><a href="./checkout.html">Thanh toán</a></li>
+                                    <li><a href="./blog-details.html">Chi tiết bài viết</a></li>
                                 </ul>
                             </li>
-                            <li class="active"><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./blog.html">Bài viết</a></li>
+                            <li><a href="./contact.html">Liên hệ</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <div class="header__cart">
                         <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            <li class="cart-anchor">
+                                <a href="#">
+                                    <i class="fa fa-shopping-bag"></i> <span class="cart-amount">0</span>
+                                </a>
+                                <div class="cart-modal">
+                                    <p><i class="fa fa-shopping-cart"></i> Giỏ hàng (<span class="cart-amount">0</span>)</p>
+                                    <hr>
+                                    <div id="buy-list"></div>
+                                    <hr>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <p class="font-weight-bold m-0">Tổng cộng:</p>
+                                            <p class="text-danger font-weight-bold m-0 total-price"></p>
+                                        </div>
+                                        <a href="#" class="btn btn-danger btn-sm">Xem giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                        <div class="header__cart__price">item: <span class="total-price">0</span></div>
                     </div>
                 </div>
             </div>
@@ -176,20 +193,20 @@
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>All departments</span>
+                            <span>Tất cả</span>
                         </div>
                         <ul>
-                            <li><a href="#">Fresh Meat</a></li>
-                            <li><a href="#">Vegetables</a></li>
-                            <li><a href="#">Fruit & Nut Gifts</a></li>
-                            <li><a href="#">Fresh Berries</a></li>
-                            <li><a href="#">Ocean Foods</a></li>
-                            <li><a href="#">Butter & Eggs</a></li>
-                            <li><a href="#">Fastfood</a></li>
-                            <li><a href="#">Fresh Onion</a></li>
-                            <li><a href="#">Papayaya & Crisps</a></li>
-                            <li><a href="#">Oatmeal</a></li>
-                            <li><a href="#">Fresh Bananas</a></li>
+                            <li><a href="#">Thịt</a></li>
+                            <li><a href="#">Rau</a></li>
+                            <li><a href="#">Nước trái cây</a></li>
+                            <li><a href="#">Cá & Tôm</a></li>
+                            <li><a href="#">Hải sản</a></li>
+                            <li><a href="#">Bơ & Trứng</a></li>
+                            <li><a href="#">Đồ ăn nhanh</a></li>
+                            <li><a href="#">Thực phẩm khô</a></li>
+                            <li><a href="#">Hoa quả sấy</a></li>
+                            <li><a href="#">Cháo & Bột</a></li>
+                            <li><a href="#">Hương liệu</a></li>
                         </ul>
                     </div>
                 </div>
@@ -199,31 +216,43 @@
                             <form action="#">
                                 <div class="hero__search__categories">
                                     <select>
-                                        <option value="1">All Categories</option>
-                                        <option value="">Fresh Meat</option>
-                                        <option value="">Vegetables</option>
-                                        <option value="">Fruit & Nut Gifts</option>
-                                        <option value="">Fresh Berries</option>
-                                        <option value="">Ocean Foods</option>
-                                        <option value="">Butter & Eggs</option>
-                                        <option value="">Fastfood</option>
-                                        <option value="">Fresh Onion</option>
-                                        <option value="">Papayaya & Crisps</option>
-                                        <option value="">Oatmeal</option>
-                                        <option value="">Fresh Bananas</option>
+                                        <option value="1">Tât cả</option>
+                                        <option value="">Thịt</option>
+                                        <option value="">Rau</option>
+                                        <option value="">Nước trái cây</option>
+                                        <option value="">Cá & Tôm</option>
+                                        <option value="">Hải sản</option>
+                                        <option value="">Bơ & Trứng</option>
+                                        <option value="">Đồ ăn nhanh</option>
+                                        <option value="">Thực phẩm khô</option>
+                                        <option value="">Hoa quả sấy</option>
+                                        <option value="">Cháo & Bột</option>
+                                        <option value="">Hương liệu</option>
                                     </select>
                                 </div>
-                                <input type="text" placeholder="What do yo u need?">
-                                <button type="submit" class="site-btn">SEARCH</button>
+                                <input
+                                    type="text"
+                                    placeholder="Bạn muốn mua gì?"
+                                    id="keyword"
+                                    oninput="handleSearchProduct()"
+                                >
+                                <button type="submit" class="site-btn">Tìm kiếm</button>
                             </form>
+                            <div class="search-result">
+                                <h5>Kết quả: <span class="search-count"></span></h5>
+                                <hr>
+                                <div class="search-products">
+                                    <p>Không có sản phẩm nào!</p>
+                                </div>
+                           </div>
                         </div>
                         <div class="hero__search__phone">
                             <div class="hero__search__phone__icon">
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+65 11.188.888</h5>
-                                <span>support 24/7 time</span>
+                                <h5>+84 6666.88.88</h5>
+                                <span>Hỗ trợ 24/7</span>
                             </div>
                         </div>
                     </div>
@@ -239,11 +268,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="blog__details__hero__text">
-                        <h2>The Moment You Need To Remove Garlic From The Menu</h2>
+                        <h2>Khoảnh khắc bạn cần loại bỏ tỏi khỏi thực đơn</h2>
                         <ul>
-                            <li>By Michael Scofield</li>
-                            <li>January 14, 2019</li>
-                            <li>8 Comments</li>
+                            <li>bởi Michael Scofield</li>
+                            <li>14, Tháng 1 - 2019</li>
+                            <li>8 Bình luận</li>
                         </ul>
                     </div>
                 </div>
@@ -260,29 +289,29 @@
                     <div class="blog__sidebar">
                         <div class="blog__sidebar__search">
                             <form action="#">
-                                <input type="text" placeholder="Search...">
+                                <input type="text" placeholder="Tìm kiếm...">
                                 <button type="submit"><span class="icon_search"></span></button>
                             </form>
                         </div>
                         <div class="blog__sidebar__item">
-                            <h4>Categories</h4>
+                            <h4>Thể loại</h4>
                             <ul>
-                                <li><a href="#">All</a></li>
-                                <li><a href="#">Beauty (20)</a></li>
-                                <li><a href="#">Food (5)</a></li>
-                                <li><a href="#">Life Style (9)</a></li>
-                                <li><a href="#">Travel (10)</a></li>
+                                <li><a href="#">Tất cả</a></li>
+                                <li><a href="#">Sắc đẹp (20)</a></li>
+                                <li><a href="#">Thực phầm (5)</a></li>
+                                <li><a href="#">Lối sống (9)</a></li>
+                                <li><a href="#">Du lịch (10)</a></li>
                             </ul>
                         </div>
                         <div class="blog__sidebar__item">
-                            <h4>Recent News</h4>
+                            <h4>Tin mới</h4>
                             <div class="blog__sidebar__recent">
                                 <a href="#" class="blog__sidebar__recent__item">
                                     <div class="blog__sidebar__recent__item__pic">
                                         <img src="img/blog/sidebar/sr-1.jpg" alt="">
                                     </div>
                                     <div class="blog__sidebar__recent__item__text">
-                                        <h6>09 Kinds Of Vegetables<br /> Protect The Liver</h6>
+                                        <h6>09 Kinds Of Rau<br /> Protect The Liver</h6>
                                         <span>MAR 05, 2019</span>
                                     </div>
                                 </a>
@@ -300,21 +329,21 @@
                                         <img src="img/blog/sidebar/sr-3.jpg" alt="">
                                     </div>
                                     <div class="blog__sidebar__recent__item__text">
-                                        <h6>4 Principles Help You Lose <br />Weight With Vegetables</h6>
+                                        <h6>4 Principles Help You Lose <br />Weight With Rau</h6>
                                         <span>MAR 05, 2019</span>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="blog__sidebar__item">
-                            <h4>Search By</h4>
+                            <h4>Tìm theo loại</h4>
                             <div class="blog__sidebar__item__tags">
-                                <a href="#">Apple</a>
-                                <a href="#">Beauty</a>
-                                <a href="#">Vegetables</a>
-                                <a href="#">Fruit</a>
-                                <a href="#">Healthy Food</a>
-                                <a href="#">Lifestyle</a>
+                                <a href="#">Táo</a>
+                                <a href="#">Sắc đẹp</a>
+                                <a href="#">Rau</a>
+                                <a href="#">Hoa quả</a>
+                                <a href="#">Healthy</a>
+                                <a href="#">Lối sống</a>
                             </div>
                         </div>
                     </div>
@@ -353,8 +382,8 @@
                             <div class="col-lg-6">
                                 <div class="blog__details__widget">
                                     <ul>
-                                        <li><span>Categories:</span> Food</li>
-                                        <li><span>Tags:</span> All, Trending, Cooking, Healthy Food, Life Style</li>
+                                        <li><span>Thể loại:</span> Thực phẩm</li>
+                                        <li><span>Tags:</span> Tất cả, Trending, Nấu ăn, Healthy, Lối sống</li>
                                     </ul>
                                     <div class="blog__details__social">
                                         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -379,7 +408,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title related-blog-title">
-                        <h2>Post You May Like</h2>
+                        <h2>Bài viết bạn có thể thích</h2>
                     </div>
                 </div>
             </div>
@@ -445,8 +474,8 @@
                         </div>
                         <ul>
                             <li>Địa chỉ: 13 P.Dịch Vọng, Cầu Giấy</li>
-                            <li>SĐT: +65 11.188.888</li>
-                            <li>Email: support@ogani.com</li>
+                            <li>SĐT: +84 6666.88.88</li>
+                            <li>Email: hotro@ogani.com</li>
                         </ul>
                     </div>
                 </div>
@@ -508,10 +537,8 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/data.js"></script>
     <script src="js/main.js"></script>
-
-
-
 </body>
-
 </html>

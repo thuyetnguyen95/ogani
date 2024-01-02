@@ -64,7 +64,7 @@
                     <ul class="header__menu__dropdown">
                         <li><a href="./shop-details.html">Shop Details</a></li>
                         <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="./checkout.html">Thanh toán</a></li>
                         <li><a href="./blog-details.html">Blog Details</a></li>
                     </ul>
                 </li>
@@ -93,15 +93,15 @@
         <div class="header__top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
                             <ul>
-                                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                                <li>Free Shipping for all Order of $99</li>
+                                <li><i class="fa fa-envelope"></i> hotro@ogani.com</li>
+                                <li class="text-danger">Free Shipping cho tất cả đơn hàng trên 1 triệu</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="header__top__right">
                             <div class="header__top__right__social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -114,12 +114,12 @@
                                 <div>English</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul>
-                                    <li><a href="#">Spanis</a></li>
+                                    <li><a href="#">Vietnamese</a></li>
                                     <li><a href="#">English</a></li>
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                                <a href="#"><i class="fa fa-user"></i> Đăng nhập</a>
                             </div>
                         </div>
                     </div>
@@ -133,31 +133,48 @@
                         <a href="./index.html"><img src="img/logo.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <nav class="header__menu">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li class="active"><a href="./shop-grid.html">Shop</a></li>
+                            <li class="active"><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./shop-grid.html">Sản phẩm</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <li><a href="./shop-details.html">Chi tiết sản phẩm</a></li>
+                                    <li><a href="./shoping-cart.html">Giỏ hàng</a></li>
+                                    <li><a href="./checkout.html">Thanh toán</a></li>
+                                    <li><a href="./blog-details.html">Chi tiết bài viết</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./blog.html">Bài viết</a></li>
+                            <li><a href="./contact.html">Liên hệ</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <div class="header__cart">
                         <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            <li class="cart-anchor">
+                                <a href="#">
+                                    <i class="fa fa-shopping-bag"></i> <span class="cart-amount">0</span>
+                                </a>
+                                <div class="cart-modal">
+                                    <p><i class="fa fa-shopping-cart"></i> Giỏ hàng (<span class="cart-amount">0</span>)</p>
+                                    <hr>
+                                    <div id="buy-list"></div>
+                                    <hr>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <p class="font-weight-bold m-0">Tổng cộng:</p>
+                                            <p class="text-danger font-weight-bold m-0 total-price"></p>
+                                        </div>
+                                        <a href="#" class="btn btn-danger btn-sm">Xem giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                        <div class="header__cart__price">item: <span class="total-price">0</span></div>
                     </div>
                 </div>
             </div>
@@ -176,20 +193,20 @@
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>All departments</span>
+                            <span>Tất cả</span>
                         </div>
                         <ul>
-                            <li><a href="#">Fresh Meat</a></li>
-                            <li><a href="#">Vegetables</a></li>
-                            <li><a href="#">Fruit & Nut Gifts</a></li>
-                            <li><a href="#">Fresh Berries</a></li>
-                            <li><a href="#">Ocean Foods</a></li>
-                            <li><a href="#">Butter & Eggs</a></li>
-                            <li><a href="#">Fastfood</a></li>
-                            <li><a href="#">Fresh Onion</a></li>
-                            <li><a href="#">Papayaya & Crisps</a></li>
-                            <li><a href="#">Oatmeal</a></li>
-                            <li><a href="#">Fresh Bananas</a></li>
+                            <li><a href="#">Thịt</a></li>
+                            <li><a href="#">Rau</a></li>
+                            <li><a href="#">Nước trái cây</a></li>
+                            <li><a href="#">Cá & Tôm</a></li>
+                            <li><a href="#">Hải sản</a></li>
+                            <li><a href="#">Bơ & Trứng</a></li>
+                            <li><a href="#">Đồ ăn nhanh</a></li>
+                            <li><a href="#">Thực phẩm khô</a></li>
+                            <li><a href="#">Hoa quả sấy</a></li>
+                            <li><a href="#">Cháo & Bột</a></li>
+                            <li><a href="#">Hương liệu</a></li>
                         </ul>
                     </div>
                 </div>
@@ -199,31 +216,43 @@
                             <form action="#">
                                 <div class="hero__search__categories">
                                     <select>
-                                        <option value="1">All Categories</option>
-                                        <option value="">Fresh Meat</option>
-                                        <option value="">Vegetables</option>
-                                        <option value="">Fruit & Nut Gifts</option>
-                                        <option value="">Fresh Berries</option>
-                                        <option value="">Ocean Foods</option>
-                                        <option value="">Butter & Eggs</option>
-                                        <option value="">Fastfood</option>
-                                        <option value="">Fresh Onion</option>
-                                        <option value="">Papayaya & Crisps</option>
-                                        <option value="">Oatmeal</option>
-                                        <option value="">Fresh Bananas</option>
+                                        <option value="1">Tât cả</option>
+                                        <option value="">Thịt</option>
+                                        <option value="">Rau</option>
+                                        <option value="">Nước trái cây</option>
+                                        <option value="">Cá & Tôm</option>
+                                        <option value="">Hải sản</option>
+                                        <option value="">Bơ & Trứng</option>
+                                        <option value="">Đồ ăn nhanh</option>
+                                        <option value="">Thực phẩm khô</option>
+                                        <option value="">Hoa quả sấy</option>
+                                        <option value="">Cháo & Bột</option>
+                                        <option value="">Hương liệu</option>
                                     </select>
                                 </div>
-                                <input type="text" placeholder="What do yo u need?">
-                                <button type="submit" class="site-btn">SEARCH</button>
+                                <input
+                                    type="text"
+                                    placeholder="Bạn muốn mua gì?"
+                                    id="keyword"
+                                    oninput="handleSearchProduct()"
+                                >
+                                <button type="submit" class="site-btn">Tìm kiếm</button>
                             </form>
+                            <div class="search-result">
+                                <h5>Kết quả: <span class="search-count"></span></h5>
+                                <hr>
+                                <div class="search-products">
+                                    <p>Không có sản phẩm nào!</p>
+                                </div>
+                           </div>
                         </div>
                         <div class="hero__search__phone">
                             <div class="hero__search__phone__icon">
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+65 11.188.888</h5>
-                                <span>support 24/7 time</span>
+                                <h5>+84 6666.88.88</h5>
+                                <span>Hỗ trợ 24/7</span>
                             </div>
                         </div>
                     </div>
@@ -239,10 +268,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Checkout</h2>
+                        <h2>Thanh toán</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Home</a>
-                            <span>Checkout</span>
+                            <a href="./index.html">Trang chủ</a>
+                            <span>Thanh toán</span>
                         </div>
                     </div>
                 </div>
@@ -256,44 +285,44 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h6><span class="icon_tag_alt"></span> Have a coupon? <a href="#">Click here</a> to enter your code
+                    <h6><span class="icon_tag_alt"></span> Bạn có mã giảm giá? <a href="#">Nhấp vào đây</a> để nhập mã của bạn
                     </h6>
                 </div>
             </div>
             <div class="checkout__form">
-                <h4>Billing Details</h4>
+                <h4>Chi tiết thanh toán</h4>
                 <form action="#">
                     <div class="row">
                         <div class="col-lg-8 col-md-6">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
-                                        <p>Fist Name<span>*</span></p>
+                                        <p>Họ<span>*</span></p>
                                         <input type="text">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
-                                        <p>Last Name<span>*</span></p>
+                                        <p>Tên<span>*</span></p>
                                         <input type="text">
                                     </div>
                                 </div>
                             </div>
                             <div class="checkout__input">
-                                <p>Country<span>*</span></p>
+                                <p>Quốc gia<span>*</span></p>
                                 <input type="text">
                             </div>
                             <div class="checkout__input">
-                                <p>Address<span>*</span></p>
-                                <input type="text" placeholder="Street Address" class="checkout__input__add">
-                                <input type="text" placeholder="Apartment, suite, unite ect (optinal)">
+                                <p>Địa chỉ <span>*</span></p>
+                                <input type="text" placeholder="Tên phố" class="checkout__input__add">
+                                <input type="text" placeholder="Số nhà, căn hộ">
                             </div>
                             <div class="checkout__input">
-                                <p>Town/City<span>*</span></p>
+                                <p>Thành phố<span>*</span></p>
                                 <input type="text">
                             </div>
                             <div class="checkout__input">
-                                <p>Country/State<span>*</span></p>
+                                <p>Huyện<span>*</span></p>
                                 <input type="text">
                             </div>
                             <div class="checkout__input">
@@ -303,7 +332,7 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
-                                        <p>Phone<span>*</span></p>
+                                        <p>Số diện thoại<span>*</span></p>
                                         <input type="text">
                                     </div>
                                 </div>
@@ -316,44 +345,44 @@
                             </div>
                             <div class="checkout__input__checkbox">
                                 <label for="acc">
-                                    Create an account?
+                                    Tạo một tài khoản?
                                     <input type="checkbox" id="acc">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
-                            <p>Create an account by entering the information below. If you are a returning customer
-                                please login at the top of the page</p>
+                            <p>Tạo một tài khoản bằng cách nhập thông tin dưới đây. Nếu bạn là khách hàng cũ
+                                Xin hãy đăng nhập ở phía trên cùng của trang</p>
                             <div class="checkout__input">
-                                <p>Account Password<span>*</span></p>
+                                <p>Mật khẩu<span>*</span></p>
                                 <input type="text">
                             </div>
                             <div class="checkout__input__checkbox">
                                 <label for="diff-acc">
-                                    Ship to a different address?
+                                    Giao hàng tới đia chỉ khác?
                                     <input type="checkbox" id="diff-acc">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
                             <div class="checkout__input">
-                                <p>Order notes<span>*</span></p>
+                                <p>Ghi chú<span>*</span></p>
                                 <input type="text"
-                                    placeholder="Notes about your order, e.g. special notes for delivery.">
+                                    placeholder="Ghi chú của bạn cho cửa hàng hoặc nhân viên vận chuyển">
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="checkout__order">
-                                <h4>Your Order</h4>
-                                <div class="checkout__order__products">Products <span>Total</span></div>
+                                <h4>Đơn của bạn</h4>
+                                <div class="checkout__order__products">Sản phẩm <span>Tổng</span></div>
                                 <ul>
-                                    <li>Vegetable’s Package <span>$75.99</span></li>
-                                    <li>Fresh Vegetable <span>$151.99</span></li>
-                                    <li>Organic Bananas <span>$53.99</span></li>
+                                    <li>Rau <span>$75.99</span></li>
+                                    <li>Thịt bò <span>$151.99</span></li>
+                                    <li>Chuôi organic <span>$53.99</span></li>
                                 </ul>
-                                <div class="checkout__order__subtotal">Subtotal <span>$750.99</span></div>
-                                <div class="checkout__order__total">Total <span>$750.99</span></div>
+                                <div class="checkout__order__subtotal">VAT <span>15000.99</span></div>
+                                <div class="checkout__order__total">Tổng <span>215000.99</span></div>
                                 <div class="checkout__input__checkbox">
                                     <label for="acc-or">
-                                        Create an account?
+                                        Tạo một tài khoản?
                                         <input type="checkbox" id="acc-or">
                                         <span class="checkmark"></span>
                                     </label>
@@ -362,19 +391,19 @@
                                     ut labore et dolore magna aliqua.</p>
                                 <div class="checkout__input__checkbox">
                                     <label for="payment">
-                                        Check Payment
+                                        Kiểm tra thanh toán
                                         <input type="checkbox" id="payment">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="checkout__input__checkbox">
                                     <label for="paypal">
-                                        Paypal
+                                        Thanh toán qua Paypal
                                         <input type="checkbox" id="paypal">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
-                                <button type="submit" class="site-btn">PLACE ORDER</button>
+                                <button type="submit" class="site-btn">ĐẶT HÀNG</button>
                             </div>
                         </div>
                     </div>
@@ -395,8 +424,8 @@
                         </div>
                         <ul>
                             <li>Địa chỉ: 13 P.Dịch Vọng, Cầu Giấy</li>
-                            <li>SĐT: +65 11.188.888</li>
-                            <li>Email: support@ogani.com</li>
+                            <li>SĐT: +84 6666.88.88</li>
+                            <li>Email: hotro@ogani.com</li>
                         </ul>
                     </div>
                 </div>
@@ -458,6 +487,8 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/data.js"></script>
     <script src="js/main.js"></script>
 
  

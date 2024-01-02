@@ -44,8 +44,8 @@ function showDiscountProducts() {
                 </ul>
             </div>
             <div class="product__discount__item__text">
-                <span>Dried Fruit</span>
-                <h5><a href="#">${product.name}</a></h5>
+                <span>Hoa quả sấy</span>
+                <h5><a href="/shop-details.html?id=${product.id}">${product.name}</a></h5>
                 <div class="product__item__price">
                 ${(product.price - (product.price * product.discount/100)).toLocaleString()}đ
                 <span>${product.price.toLocaleString()}đ</span>
@@ -79,7 +79,7 @@ function showProducts(products) {
                 </ul>
             </div>
             <div class="product__item__text">
-                <h6><a href="#">${product.name}</a></h6>
+                <h6><a href="/shop-details.html?id=${product.id}">${product.name}</a></h6>
                 <h5>${product.price.toLocaleString()}đ</h5>
             </div>
         </div>
@@ -146,38 +146,88 @@ $('.price-range').slider({
   }
 })
 
-function addToCart(productId) {
-  let addedProduct = PRODUCTS.filter(function(product) {
-    return productId === product.id;
-  })
-  addedProduct = addedProduct[0];
+// Hiển thị sẵn giỏ hàng
+let cartDefault = localStorage.getItem('cart') || '[]';
+renderCart(JSON.parse(cartDefault));
 
-  let cart = localStorage.getItem('cart');
-  cart = JSON.parse(cart);
+// Sản phẩm mới nhất
+function showLatestProducts() {
+  let latestProducts = PRODUCTS.slice(PRODUCTS.length - 6, PRODUCTS.length);
 
-  if (!cart) {
-    cart = [];
-    addedProduct.qty = 1;
-    cart.push(addedProduct)
-    localStorage.setItem('cart', JSON.stringify(cart));
-  } else {
-    let oldProductIndex = cart.findIndex(function(product) {
-      return product.id == addedProduct.id;
-    })
-
-    if (oldProductIndex == -1) {
-      addedProduct.qty = 1;
-      cart.push(addedProduct);
-      localStorage.setItem('cart', JSON.stringify(cart))
-    } else {
-      cart[oldProductIndex].qty += 1;
-      localStorage.setItem('cart', JSON.stringify(cart))
-    }
+  let latestProductDOM = '';
+  for (let index = 0; index < 2; index++) {
+    latestProductDOM += `
+    <div class="latest-prdouct__slider__item">
+      <a href="#" class="latest-product__item">
+          <div class="latest-product__item__pic">
+              <img src="${latestProducts[index * 3 + 0].image}" alt="">
+          </div>
+          <div class="latest-product__item__text">
+              <h6>${latestProducts[index * 3 + 0].name}</h6>
+              <span>${latestProducts[index * 3 + 0].price.toLocaleString()}đ</span>
+          </div>
+      </a>
+      <a href="#" class="latest-product__item">
+          <div class="latest-product__item__pic">
+              <img src="${latestProducts[index * 3 + 1].image}" alt="">
+          </div>
+          <div class="latest-product__item__text">
+              <h6>${latestProducts[index * 3 + 1].name}</h6>
+              <span>${latestProducts[index * 3 + 1].price.toLocaleString()}đ</span>
+          </div>
+      </a>
+      <a href="#" class="latest-product__item">
+          <div class="latest-product__item__pic">
+              <img src="${latestProducts[index * 3 + 2].image}" alt="">
+          </div>
+          <div class="latest-product__item__text">
+              <h6>${latestProducts[index * 3 + 2].name}</h6>
+              <span>${latestProducts[index * 3 + 2].price.toLocaleString()}đ</span>
+          </div>
+      </a>
+    </div> 
+    `;
   }
 
-  renderCart(cart);
+  $('.latest-product__slider').append(latestProductDOM);
 }
+showLatestProducts();
 
-// Hiển thị sẵn giỏ hàng
-let cartDefault = localStorage.getItem('cart');
-renderCart(JSON.parse(cartDefault));
+
+// function handleSearchProduct() {
+//   let keyword = $('#keyword').val().toLowerCase().trim();
+
+//   if (keyword == '') {
+//     $('.search-count').text('');
+//     $('.search-products').empty().append(`<p>Không có sản phẩm nào!</p>`);
+//     return
+//   }
+
+//   let products = PRODUCTS.filter((product) => {
+//     return product.name.toLowerCase().includes(keyword);
+//   });
+
+//   let productsDom = '';
+//   if (products.length) {
+//     products.forEach((product) => {
+//       productsDom += `
+//           <a href="#">
+//             <div class="search-product-item">
+//                 <img src="${product.image}" alt="">
+//                 <div class="search-product-item-info">
+//                     <p>${product.name}</p>
+//                     <p>${product.price.toLocaleString()}đ</p>
+//                 </div>
+//             </div>
+//         </a>
+//       `;
+//     });
+//   } else {
+//     productsDom = `<p>Không có sản phẩm nào!</p>`;
+//   }
+
+//   $('.search-count').text(products.length);
+
+//   $('.search-products').empty().append(productsDom);
+//   console.log(products);
+// }

@@ -125,15 +125,9 @@
     /*------------------
 		Single Product
 	--------------------*/
-    $('.product__details__pic__slider img').on('click', function (event) {
-        var imgurl = $(this).data('imgbigurl');
-        var bigImg = $('.product__details__pic__item--large').attr('src');
-        if (imgurl != bigImg) {
-            $('.product__details__pic__item--large').attr({
-                src: imgurl
-            });
-        }
-    });
+    $('.product-img-small').on('click', (event) => {
+        $('.product__details__pic__item--large').attr('src', event.target.src);
+    })
 
     // Ẩn hiện menu sidebar
     $('.hero__categories__all').click(function() {
@@ -150,3 +144,42 @@
     });
 
 })(jQuery);
+
+function handleSearchProduct() {
+    let keyword = $('#keyword').val().toLowerCase().trim();
+
+    if (keyword == '') {
+        $('.search-count').text('');
+        $('.search-products').empty().append(`<p>Không có sản phẩm nào!</p>`);
+        return
+    }
+
+    let products = PRODUCTS.filter((product) => {
+        return product.name.toLowerCase().includes(keyword);
+    });
+
+    let productsDom = '';
+    if (products.length) {
+        products.forEach((product) => {
+        productsDom += `
+            <a href="/shop-details.html?id=${product.id}">
+                <div class="search-product-item">
+                    <img src="${product.image}" alt="">
+                    <div class="search-product-item-info">
+                        <p>${product.name}</p>
+                        <p>${product.price.toLocaleString()}đ</p>
+                    </div>
+                </div>
+            </a>
+        `;
+        });
+    } else {
+        productsDom = `<p>Không có sản phẩm nào!</p>`;
+    }
+
+    $('.search-count').text(products.length);
+
+    $('.search-products').empty().append(productsDom);
+    console.log(products);
+}
+  

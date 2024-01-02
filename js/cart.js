@@ -36,13 +36,48 @@ function renderCart(products) {
 
 // Xóa sản phẩm khỏi giỏ hàng
 function removeCartProduct(id) {
-  let cart = localStorage.getItem('cart'); // lấy giỏ hàng trong localstorage
-  let products = JSON.parse(cart || '[]')
+  let cart = localStorage.getItem('cart') || '[]';
+  let products = JSON.parse(cart);
 
+  // Loại bỏ sản phẩm ra khỏi mảng
   let result = products.filter(function (product) {
     return product.id !== id;
   })
 
-  renderCart(result);
+  localStorage.setItem('cart', JSON.stringify(result)); // Cập nhật lại giá trị giỏ hàng trong localStorage
+
+  renderCart(result); // Render lại giỏ hàng
 }
 
+function addToCart(productId, quantity = 1) {
+
+  let addedProduct = PRODUCTS.filter(function(product) {
+    return productId === product.id;
+  })
+  addedProduct = addedProduct[0];
+
+  let cart = localStorage.getItem('cart');
+  cart = JSON.parse(cart);
+
+  if (!cart) {
+    cart = [];
+    addedProduct.qty = quantity;
+    cart.push(addedProduct)
+    localStorage.setItem('cart', JSON.stringify(cart));
+  } else {
+    let oldProductIndex = cart.findIndex(function(product) {
+      return product.id == addedProduct.id;
+    })
+
+    if (oldProductIndex == -1) {
+      addedProduct.qty = quantity;
+      cart.push(addedProduct);
+      localStorage.setItem('cart', JSON.stringify(cart))
+    } else {
+      cart[oldProductIndex].qty += quantity;
+      localStorage.setItem('cart', JSON.stringify(cart))
+    }
+  }
+
+  renderCart(cart);
+}
