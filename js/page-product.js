@@ -45,7 +45,7 @@ function showDiscountProducts() {
             </div>
             <div class="product__discount__item__text">
                 <span>Hoa quả sấy</span>
-                <h5><a href="/.shop-details.html?id=${product.id}">${product.name}</a></h5>
+                <h5><a href="./shop-details.html?id=${product.id}">${product.name}</a></h5>
                 <div class="product__item__price">
                 ${(product.price - (product.price * product.discount/100)).toLocaleString()}đ
                 <span>${product.price.toLocaleString()}đ</span>
@@ -79,7 +79,7 @@ function showProducts(products) {
                 </ul>
             </div>
             <div class="product__item__text">
-                <h6><a href="/.shop-details.html?id=${product.id}">${product.name}</a></h6>
+                <h6><a href="./shop-details.html?id=${product.id}">${product.name}</a></h6>
                 <h5>${product.price.toLocaleString()}đ</h5>
             </div>
         </div>

@@ -162,7 +162,7 @@ function handleSearchProduct() {
     if (products.length) {
         products.forEach((product) => {
         productsDom += `
-            <a href="/.shop-details.html?id=${product.id}">
+            <a href="./shop-details.html?id=${product.id}">
                 <div class="search-product-item">
                     <img src="${product.image}" alt="">
                     <div class="search-product-item-info">
