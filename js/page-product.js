@@ -146,9 +146,9 @@ $('.price-range').slider({
   }
 })
 
-// Hiển thị sẵn giỏ hàng
-let cartDefault = localStorage.getItem('cart') || '[]';
-renderCart(JSON.parse(cartDefault));
+// // Hiển thị sẵn giỏ hàng
+// let cartDefault = localStorage.getItem('cart') || '[]';
+// renderCart(JSON.parse(cartDefault));
 
 // Sản phẩm mới nhất
 function showLatestProducts() {

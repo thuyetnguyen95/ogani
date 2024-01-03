@@ -1970,6 +1970,7 @@ ol {
 .shoping__cart__table table tbody tr td.shoping__cart__item img {
 	display: inline-block;
 	margin-right: 25px;
+	width: 100px;
 }
 
 .shoping__cart__table table tbody tr td.shoping__cart__item h5 {
@@ -3688,4 +3689,18 @@ ol {
 	text-align: center;
 	text-decoration: underline;
 	color: red;
+}
+
+/*  */
+.shoping__cart__btns a:hover{
+	background-color: #7fad39;
+	color: #fff;
+}
+
+.coupon-error {
+	display: none;
+}
+
+.display-coupon {
+	display: none;
 }

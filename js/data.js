@@ -1,3 +1,10 @@
+const COUPONS = [
+  { code: '123456', rate: 10 },
+  { code: '654321', rate: 5 },
+  { code: '686868', rate: 20 },
+]
+
+
 const PRODUCTS = [
   {
     "id": 1,

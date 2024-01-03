@@ -182,4 +182,7 @@ function handleSearchProduct() {
     $('.search-products').empty().append(productsDom);
     console.log(products);
 }
-  
+
+// Hiển thị sẵn giỏ hàng
+let cartDefault = localStorage.getItem('cart') || '[]';
+renderCart(JSON.parse(cartDefault));

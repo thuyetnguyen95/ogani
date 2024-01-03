@@ -282,7 +282,7 @@
 
     <!-- Shoping Cart Section Begin -->
     <section class="shoping-cart spad">
-        <div class="container">
+        <div class="container" id="shoping-cart-container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="shoping__cart__table">
@@ -296,73 +296,7 @@
                                     <th></th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="img/cart/cart-1.jpg" alt="">
-                                        <h5>Rau’s Package</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        $55.00
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        $110.00
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <span class="icon_close"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="img/cart/cart-2.jpg" alt="">
-                                        <h5>Fresh Garden Rau</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        $39.00
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        $39.99
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <span class="icon_close"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="img/cart/cart-3.jpg" alt="">
-                                        <h5>Organic Bananas</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        $69.00
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        $69.99
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <span class="icon_close"></span>
-                                    </td>
-                                </tr>
+                            <tbody id="shoping-cart-table">
                             </tbody>
                         </table>
                     </div>
@@ -371,8 +305,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="shoping__cart__btns">
-                        <a href="#" class="primary-btn cart-btn">TIẾP TỤC MUA HÀNG</a>
-                        <a href="#" class="primary-btn cart-btn cart-btn-right">
+                        <a href="./shop-grid.html" class="primary-btn cart-btn">TIẾP TỤC MUA HÀNG</a>
+                        <a href="javascript:void(0)" class="primary-btn cart-btn cart-btn-right" onclick="calculateTotalPrice()">
                             <span class="icon_loading"></span>Cập nhật Giỏ hàng
                         </a>
                     </div>
@@ -381,9 +315,10 @@
                     <div class="shoping__continue">
                         <div class="shoping__discount">
                             <h5>Mã giảm giá</h5>
-                            <form action="#">
-                                <input type="text" placeholder="Nhập mã giảm giá của bạn">
-                                <button type="submit" class="site-btn">Áp dụng</button>
+                            <form action="javascript:void(0)">
+                                <input type="text" placeholder="Nhập mã giảm giá của bạn" id="input-coupon">
+                                <button type="submit" class="site-btn" onclick="applyCoupon()">Áp dụng</button>
+                                <p class="text-danger coupon-error">Mã không đúng!</p>
                             </form>
                         </div>
                     </div>
@@ -392,8 +327,9 @@
                     <div class="shoping__checkout">
                         <h5>Tổng giỏ hàng</h5>
                         <ul>
-                            <li>VAT <span>16.000đ</span></li>
-                            <li>Tổng tiền <span>200.000đ</span></li>
+                            <li>VAT(8%) <span id="vat">0đ</span></li>
+                            <li class="display-coupon">COUPON(<b id="coupon-rate"></b>%) <span id="coupon-amount">0đ</span></li>
+                            <li>Tổng tiền <span id="total">0đ</span></li>
                         </ul>
                         <a href="#" class="primary-btn">Tiến hành thanh toán</a>
                     </div>
@@ -479,6 +415,8 @@
     <script src="js/owl.carousel.min.js"></script>
 
     <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/shoping-cart.js"></script>
     <script src="js/main.js"></script>
 
 
