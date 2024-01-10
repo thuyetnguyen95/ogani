@@ -2,6 +2,10 @@
 
 // Hiển thị danh sách sản phẩm ra giỏ hàng.
 function renderCart(products) {
+  if (!products.length) {
+    return;
+  }
+  
   // Tạo DOM sản phẩm
   let productsElement = '';
 

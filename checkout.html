@@ -215,7 +215,7 @@
                         <div class="hero__search__form">
                             <form action="#">
                                 <div class="hero__search__categories">
-                                    <select>
+                                    <select id="select">
                                         <option value="1">Tât cả</option>
                                         <option value="">Thịt</option>
                                         <option value="">Rau</option>
@@ -298,74 +298,46 @@
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Họ<span>*</span></p>
-                                        <input type="text">
+                                        <input type="text" id="input_ho">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Tên<span>*</span></p>
-                                        <input type="text">
+                                        <input type="text" id="input_ten">
                                     </div>
                                 </div>
                             </div>
                             <div class="checkout__input">
-                                <p>Quốc gia<span>*</span></p>
-                                <input type="text">
-                            </div>
-                            <div class="checkout__input">
-                                <p>Địa chỉ <span>*</span></p>
-                                <input type="text" placeholder="Tên phố" class="checkout__input__add">
-                                <input type="text" placeholder="Số nhà, căn hộ">
-                            </div>
-                            <div class="checkout__input">
-                                <p>Thành phố<span>*</span></p>
-                                <input type="text">
+                                <p>Tỉnh<span>*</span></p>
+                                <input type="text" id="input_tinh">
                             </div>
                             <div class="checkout__input">
                                 <p>Huyện<span>*</span></p>
-                                <input type="text">
+                                <input type="text" id="input_huyen">
                             </div>
                             <div class="checkout__input">
-                                <p>Postcode / ZIP<span>*</span></p>
-                                <input type="text">
+                                <p>Địa chỉ <span>*</span></p>
+                                <input type="text" placeholder="Tên phố" class="checkout__input__add" id="input_tenpho">
+                                <input type="text" placeholder="Số nhà, căn hộ" id="input_sonha">
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Số diện thoại<span>*</span></p>
-                                        <input type="text">
+                                        <input type="text" id="input_sdt">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Email<span>*</span></p>
-                                        <input type="text">
+                                        <input type="text" id="input_email">
                                     </div>
                                 </div>
                             </div>
-                            <div class="checkout__input__checkbox">
-                                <label for="acc">
-                                    Tạo một tài khoản?
-                                    <input type="checkbox" id="acc">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <p>Tạo một tài khoản bằng cách nhập thông tin dưới đây. Nếu bạn là khách hàng cũ
-                                Xin hãy đăng nhập ở phía trên cùng của trang</p>
                             <div class="checkout__input">
-                                <p>Mật khẩu<span>*</span></p>
-                                <input type="text">
-                            </div>
-                            <div class="checkout__input__checkbox">
-                                <label for="diff-acc">
-                                    Giao hàng tới đia chỉ khác?
-                                    <input type="checkbox" id="diff-acc">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="checkout__input">
-                                <p>Ghi chú<span>*</span></p>
-                                <input type="text"
+                                <p>Ghi chú</p>
+                                <input type="text" id="input_ghichu"
                                     placeholder="Ghi chú của bạn cho cửa hàng hoặc nhân viên vận chuyển">
                             </div>
                         </div>
@@ -373,37 +345,14 @@
                             <div class="checkout__order">
                                 <h4>Đơn của bạn</h4>
                                 <div class="checkout__order__products">Sản phẩm <span>Tổng</span></div>
-                                <ul>
-                                    <li>Rau <span>$75.99</span></li>
-                                    <li>Thịt bò <span>$151.99</span></li>
-                                    <li>Chuôi organic <span>$53.99</span></li>
+                                <ul id="order">
+                                    
                                 </ul>
-                                <div class="checkout__order__subtotal">VAT <span>15000.99</span></div>
-                                <div class="checkout__order__total">Tổng <span>215000.99</span></div>
-                                <div class="checkout__input__checkbox">
-                                    <label for="acc-or">
-                                        Tạo một tài khoản?
-                                        <input type="checkbox" id="acc-or">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua.</p>
-                                <div class="checkout__input__checkbox">
-                                    <label for="payment">
-                                        Kiểm tra thanh toán
-                                        <input type="checkbox" id="payment">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="checkout__input__checkbox">
-                                    <label for="paypal">
-                                        Thanh toán qua Paypal
-                                        <input type="checkbox" id="paypal">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <button type="submit" class="site-btn">ĐẶT HÀNG</button>
+                                <div class="checkout__order__subtotal">VAT <span>0</span></div>
+                                <div class="checkout__order__discount">Khuyễn mãi <span>0</span></div>
+                                <div class="checkout__order__total">Tổng <span>0</span></div>
+                               
+                                <button type="button" class="site-btn" onclick="handleOrder()">ĐẶT HÀNG</button>
                             </div>
                         </div>
                     </div>
@@ -488,11 +437,12 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
     <script src="js/main.js"></script>
-
- 
-
 </body>
 
 </html>
+

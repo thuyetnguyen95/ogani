@@ -117,8 +117,12 @@ function applyCoupon() {
 
   if (coupon == undefined) {
     $('.coupon-error').show();
+    localStorage.setItem('coupon', '');
+
     return;
   }
+
+  localStorage.setItem('coupon', JSON.stringify(coupon));
 
   $('.coupon-error').hide();
   $('.display-coupon').show();
