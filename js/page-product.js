@@ -98,7 +98,7 @@ function showProducts(products) {
 
 // Sắp xếp sản phẩm
 function sortPrice() {
-  let sortType = $('#sort-price').val();
+  let sortType = $('.sort-price').val();
 
   let tempProducts = PRODUCTS.slice();
 

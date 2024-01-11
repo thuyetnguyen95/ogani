@@ -120,7 +120,7 @@
     /*--------------------------
         Select
     ----------------------------*/
-    $("#select").niceSelect();
+    $(".select-custom").niceSelect();
 
     /*------------------
 		Single Product
