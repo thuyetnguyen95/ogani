@@ -53,7 +53,7 @@ function showTotalPrice() {
 
   let totalPrice = 0;
   cart.forEach((product) => {
-    totalPrice += product.price * product.qty; 
+    totalPrice += product.price*(1-product.discount/100) * product.qty;
   })
 
   let discount = 0;

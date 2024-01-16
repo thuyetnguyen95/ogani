@@ -16,7 +16,7 @@ function renderCart(products) {
       </div>
       <div class="col-md-7 col-7">
           <p class="m-0">${product.name}</p>
-          <p class="m-0">${product.price.toLocaleString()}đ x ${product.qty}</p>
+          <p class="m-0">${(product.price*(1-product.discount/100)).toLocaleString()}đ x ${product.qty}</p>
       </div>
       <div class="col-md-1 col-1">
           <button class="btn btn-defaut" onclick="removeCartProduct(${product.id})">x</button>
@@ -32,8 +32,9 @@ function renderCart(products) {
 
   // Tính tổng giá sản phẩm trong giỏ hàng.
   let totalPrice = 0;
+  console.log(products);
   products.forEach(function (product) {
-    totalPrice += product.price * product.qty;
+    totalPrice += product.price*(1-product.discount/100) * product.qty;
   })
   $('.total-price').text(`${totalPrice.toLocaleString()}đ`);
 }

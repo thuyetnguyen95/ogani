@@ -99,7 +99,7 @@ function calculateTotalPrice() {
 
   let totalPrice = 0;
   cart.forEach((product) => {
-    totalPrice += product.price * product.qty; 
+    totalPrice += product.price*(1-product.discount/100) * product.qty;
   })
 
   $('#vat').text((totalPrice * 0.08).toLocaleString() + 'đ');
@@ -135,7 +135,7 @@ function applyCoupon() {
   }
   let totalPrice = 0;
   cart.forEach((product) => {
-    totalPrice += product.price * product.qty; 
+    totalPrice += product.price*(1-product.discount/100) * product.qty;
   })
   let couponAmount = totalPrice * (coupon.rate / 100)
   $('#coupon-amount').text(couponAmount.toLocaleString() + 'đ');

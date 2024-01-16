@@ -24,12 +24,15 @@ function showOrderPrice() {
   cart = JSON.parse(cart || '[]');
 
   if (!cart.length) {
+    $('.checkout__order__discount').hide();
+    $('.checkout__order__discount span').text('0đ');
+    $('.checkout__order__total span').text('0đ');
     return;
   }
 
   let totalPrice = 0;
   cart.forEach(product => {
-    totalPrice += product.price * product.qty;
+    totalPrice += product.price*(1-product.discount/100) * product.qty;
   })
 
   let tax = 8 / 100;
@@ -99,23 +102,23 @@ function handleOrder() {
   localStorage.setItem('orders', JSON.stringify(orders));
 
   // Xóa order cũ
-  localStorage.setItem('cart', 0);
-  localStorage.setItem('coupon', 0);
-  localStorage.setItem('totalDiscount', 0);
+  localStorage.setItem('cart', '[]');
+  localStorage.setItem('coupon', null);
+  localStorage.setItem('totalDiscount', null);
 
   renderCart([]);
   showOrder();
   showOrderPrice();
 
-  $('#input_ho').val();
-  $('#input_ten').val();
-  $('#input_tinh').val();
-  $('#input_huyen').val();
-  $('#input_tenpho').val();
-  $('#input_sonha').val();
-  $('#input_sdt').val();
-  $('#input_email').val();
-  $('#input_ghichu').val();
+  $('#input_ho').val('');
+  $('#input_ten').val('');
+  $('#input_tinh').val('');
+  $('#input_huyen').val('');
+  $('#input_tenpho').val('');
+  $('#input_sonha').val('');
+  $('#input_sdt').val('');
+  $('#input_email').val('');
+  $('#input_ghichu').val('');
 
   Swal.fire({
     icon: "success",

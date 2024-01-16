@@ -40,7 +40,7 @@ function showDiscountProducts() {
                 <div class="product__discount__percent">-${product.discount}%</div>
                 <ul class="product__item__pic__hover">
                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a href="javascript:void(0)" onclick="addToCart(${product.id})"><i class="fa fa-shopping-cart"></i></a></li>
                 </ul>
             </div>
             <div class="product__discount__item__text">
