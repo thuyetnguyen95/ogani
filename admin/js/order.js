@@ -32,20 +32,20 @@ renderTableOrder();
 
 function orderStatus(order) {
   if (!order.trangthai) {
-    return 'Đơn mới';
+    return '<span>Đơn mới</span>';
   }
 
   if (order.trangthai == 'da_huy_don') {
-    return 'Đã hủy đơn';
+    return '<span class="text-danger">Đã hủy đơn</span>';
   }
 
   if (order.trangthai == 'da_xac_nhan_don') {
-    return 'Đã xác nhận đơn';
+    return '<span class="text-primary">Đã xác nhận đơn</span>';
   }
 
   if (order.trangthai == 'da_nhan_hang') {
-    return 'Đã nhận hàng';
+    return '<span class="text-success">Đã nhận hàng</span>';
   }
 
-  return 'Đơn mới';
+  return '<span>Đơn mới</span>';
 }

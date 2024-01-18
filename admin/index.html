@@ -9,5 +9,14 @@
 </head>
 <body>
 <script src="js/auth.js"></script>
+<script>
+
+let userAdmin = localStorage.getItem('user');
+userAdmin = JSON.parse(userAdmin || null);
+
+if (userAdmin && userAdmin.username == admin.username && userAdmin.password == admin.password) {
+  window.location.href = "/admin/pages/index.html"
+}
+</script>
 </body>
 </html>
